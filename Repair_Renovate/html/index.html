@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Home Repair</title>
+    </head>
+    <body>
+
+        <header class="header" id="header">
+
+            <div class="img-logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="logo"
+                        width="100px" height="60px">
+                </a>
+            </div>
+
+            <div class="navbar">
+                <a href="#header">HOME</a>
+                <a href="#about-us">ABOUT</a>
+                <a href="#services" class="dropdown">SERVICES</a>
+                <a href="#popular-services">POPULAR SERVICES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </header>
+
+
+        <div class="container-first">
+
+            <div class="home-repair">
+
+                <p>
+                    <span class="yellow" id="homerepair">HOME REPAIR</span> <br>
+                    <span id="renovating">& Renovating</span> <br> <br>
+                    You have gone to the determination that you need to remodel
+                    your home. Perhaps you were setting the groundwork to push
+                    your home and move to a more redesigned house but
+                    <span id="dots">...</span><span id="more"> the moderate
+                        lodging business has put a damper on that thought.
+                        Alternatively, perhaps you have been in your home for
+                        twenty years and imagine that a “facelift” is in place.</span>
+                </p> <br>
+                <center><button onclick="myFunction()" id="myBtn">Read more</button></center>
+                <script>
+                function myFunction() {
+                  var dots = document.getElementById("dots");
+                  var moreText = document.getElementById("more");
+                  var btnText = document.getElementById("myBtn");
+                
+                  if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+                </script>
+            </div>
+
+
+            <div class="home-repair-img">
+                <img src="../img/home_repair.jpg" alt="homerepair" width="100%"
+                    height="90%">
+
+                <img src="../img/v-min.png" alt="toolbox" id="toolbox">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container-second" id="services">
+
+            <div class="home-cleaning">
+                <center><img src="../img/cleaning.png" alt=""></center><br>
+                <h3><span class="yellow"> HOME CLEANING</span></h3>
+                <p>
+                    Your home is more than just a building—its your sanctuary—a
+                    space where you can relax, unwind, and spend time doing the
+                    things you love.
+                </p>
+
+            </div>
+
+
+            <div class="interior-painting">
+                <center><img src="../img/paint-roller.png" alt=""></center><br>
+                <h3><span class="yellow"> INTERIOR PAINTING</span></h3>
+                <p>
+                    Painting the entire interior of a house can transform it
+                    from mundane to inspiring!
+                </p>
+
+            </div>
+
+
+            <div class="light-fixure">
+                <center><img src="../img/light-bulb.png" alt=""></center><br>
+                <h3><span class="yellow"> LIGHT FIXURE</span></h3>
+                <p>
+                    Every editorial product is independently selected, though we
+                    may be compensated or receive an affiliate commission.
+                </p>
+
+            </div>
+
+
+            <div class="smart-home">
+                <center><img src="../img/smart-house.png" alt=""></center><br>
+                <h3><span class="yellow"> SMART HOME </span></h3>
+                <p>
+                    A smart home refers to a convenient home setup where
+                    appliances and devices can be automatically controlled.
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <div class="container-third" id="about-us">
+            <h1> About Us</h1>
+
+            <p>The layout and appearance of your home can truly shape your
+                day-to-day lifestyle. If it's time to give your property an
+                update, turn to the professionals at Home Repairs and
+                Remodeling, LLC <span id="dots-container-third">...</span><span
+                    id="more-container-third">. As an established home
+                    remodeling firm in Phoenix, AZ, our goal is to transform
+                    your home so that it meets your functional and aesthetic
+                    needs.Whether you're looking to update a single room in your
+                    home or desire more extensive renovations, our home
+                    remodeling contractors have the tools and skills necessary
+                    to complete your project on time and to your total
+                    satisfaction. To set up an on-site consultation, call us
+                    today.
+                </span>
+            </p> <br>
+            <center><button onclick="moreFunction()" id="btn-container-third">Read
+                    more</button></center>
+
+            <script>
+
+                function moreFunction(){
+
+                    var moreDots= document.getElementById("dots-container-third");
+                    var moreContent=document.getElementById("more-container-third");
+                    var btnContent=document.getElementById("btn-container-third");
+
+                    if (moreDots.style.display=="none"){
+                        moreDots.style.display = "inline";
+                        btnContent.innerHTML = "Read more"; 
+                        moreContent.style.display = "none";
+                    }else{
+
+                        moreDots.style.display = "none";
+                        btnContent.innerHTML = "Read less"; 
+                        moreContent.style.display = "inline";
+                    }
+                }   
+            </script>
+            <br><br>
+        </div>
+
+        <div class="container-fourth">
+            <div class="help">
+
+                <p class="repair-service">r&nbsp;&nbsp;e&nbsp;&nbsp;p&nbsp;&nbsp;a&nbsp;&nbsp;i&nbsp;&nbsp;r&nbsp;&nbsp;&nbsp;&nbsp;
+                    s&nbsp;&nbsp;e&nbsp;&nbsp;r&nbsp;&nbsp;v&nbsp;&nbsp;i&nbsp;&nbsp;c&nbsp;&nbsp;e&nbsp;&nbsp;s&nbsp;&nbsp;
+                </p>
+
+                <h1>HOW CAN WE HELP YOU?</h1>
+            </div>
+        </div>
+
+
+        <div class="container-fifth" id="popular-services">
+            <h1>Popular Services</h1>
+            <p id="popular-service-para">As a customer-focused solution
+                provider, were dedicated to
+                redefining the home <br> improvement service experience for
+                homeowners and commercial property <br> owners.
+            </p>
+            <div class="popular-services">
+
+                <div id="door-painting">
+                    <br>
+                    <center> <img src="../img/door-painting.jpg" alt=""
+                            height="200px" width="80%"></center>
+                    <h2>DOOR PAINTING</h2>
+                    <p>
+                        By painting the doors of your home,<br>you can
+                        immediately
+                        boost your<br> homes curb appeal.
+                    </p>
+                </div>
+                <div id="garbage-disposal">
+                    <br>
+                    <center> <img src="../img/garbage-disposal.jpg" alt=""
+                            height="200px" width="80%"></center>
+                    <h2>GARBAGE DISPOSAL</h2>
+                    <p>
+                        By painting the doors of your home, <br> you can
+                        immediately
+                        boost your <br> homes curb appeal.
+                    </p>
+                </div>
+                <div id="plumbing-service">
+                    <br>
+                    <center> <img src="../img/plumbing.jpg" alt=""
+                            height="200px" width="80%"></center>
+                    <h2>PLUMBING SERVICE </h2>
+                    <p>
+                        By painting the doors of your home, <br> you can
+                        immediately
+                        boost your <br> homes curb appeal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sixth">
+
+            <div class="image-ontop">
+                <div id="yellow-onbot">
+                </div>
+                <div id="ontop-img"><img src="../img/ontop.jpg" alt=""
+                        width="100%" height="100%"></div>
+            </div>
+
+            <div class="about-us">
+
+                <h1>Our Company Offers</h1>
+                <p>
+                    We offer educational and repair services for <br>
+                    homeowners.
+                    Depending on your <br>household size and income, you may
+                    <br> qualify
+                    for home repair assistance. See <br> what we can help you
+                    with
+                    today!
+                </p>
+            </div>
+        </div>
+
+        <div class="container-seventh" id="contact">
+
+            <div class="call-us">
+                <br>
+                <br>
+                <h3>CALL US</h3>
+                <p>
+                    1 (234) 567-891, 1 (234) 987-654
+                </p>
+
+                <h3>LOCATION</h3>
+                <p>
+                    121 Rock Sreet, 21 Avenue, New York, NY <br> 92103-9000
+                </p>
+
+                <h3>BUSINESS HOURS</h3>
+                <p>
+                    Mon - Fri …… 10 am - 8 pm, Sat, Sun ... <br>.… Closed
+                </p>
+
+            </div>
+
+            <div class="form">
+
+                <form action="">
+                    <br><br><br><br>
+                    <input type="text" name="username" id="username"
+                        placeholder="Enter Your Name"><br>
+                    <input type="email" name="email" id="email"
+                        placeholder="Enter Your Email"><br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Enter Your Message"></textarea>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2022 <img
+                    src="../img/logo.png"
+                    alt="logo"> All Rights Reserved. <br>
+                <a href="#header">Back to the top</a>
+            </p>
+        </footer>
+    </body>
+</html>

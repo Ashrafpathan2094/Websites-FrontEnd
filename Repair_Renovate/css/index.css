@@ -1,0 +1,401 @@
+body {
+
+    background-color: rgb(28, 27, 27);
+    font-family: 'Raleway', sans-serif;
+
+    color: rgb(208, 202, 202);
+}
+
+.header{
+    height:60px;
+}
+
+.navbar{
+    padding-top: 20px;
+    padding-right: 500px;
+    float:right;
+    display:block;      
+}
+
+.img-logo{
+    margin-left: 20px;
+    float:left;
+}
+
+.navbar a{
+    padding:20px;
+    font-family: inherit;
+    font-size:20px;
+    text-decoration: none;
+    color: rgb(227, 198, 33);
+    transition: all 1s;
+}
+
+.navbar a:hover{
+
+    color:white;
+    background-color:rgb(227, 198, 33);
+}
+
+.container-first {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.yellow {
+    color: rgb(227, 198, 33);
+}
+
+
+.home-repair,
+.home-repair-img {
+
+    height: 700px;
+    width: 40%;
+}
+
+.home-repair {
+
+
+    padding-top: 100px;
+
+
+}
+
+#homerepair {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#renovating {
+
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn {
+
+    color: inherit;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(28, 27, 27);
+    font-size: 20px;
+    border: 1px solid rgb(208, 202, 202);
+    font-family: inherit;
+    transition: all 1s;
+}
+
+#myBtn:hover {
+
+    color: rgb(28, 27, 27);
+    background-color: rgb(208, 202, 202);
+}
+
+
+
+.home-repair-img {
+
+    position: relative;
+    padding-top: 50px;
+}
+
+#toolbox {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 150px;
+    top: 400px;
+}
+
+.container-second {
+
+    min-width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    background-color: rgb(227, 198, 33);
+}
+
+.container-second div {
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: rgb(28, 27, 27);
+}
+
+.container-second h3 {
+    font-size: 25px;
+}
+
+
+.container-second img {
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(227, 198, 33);
+    border-radius: 5%;
+    margin: auto;
+
+
+
+}
+
+.container-third {
+    text-align: center;
+}
+
+.container-third h1 {
+    color: white;
+    font-size: 100px;
+}
+
+.container-third p {
+
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+}
+
+#more-container-third {
+
+    display: none;
+}
+
+#btn-container-third {
+
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: inherit;
+    background-color: rgb(227, 198, 33);
+    color: white;
+    transition: all 1s;
+}
+
+#btn-container-third:hover {
+
+    opacity: 0.7;
+}
+
+.container-fourth {
+
+    min-width: 100%;
+    min-height: 700px;
+    background-image: url(../img/yellow-tools.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+
+.container-fourth .help {
+
+    width: 30%;
+    min-height: 500px;
+    background-color: rgb(227, 198, 33);
+    margin-left: 100px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .5);
+    transition: all 1s;
+}
+
+.container-fourth .help .repair-service {
+
+    font-size: 30px;
+}
+
+.container-fourth h1 {
+
+    font-size: 80px;
+}
+
+
+.container-fourth .help:hover {
+    transform: scale(1.1);
+}
+
+
+.container-fifth{
+    margin-top:-45px;
+    min-height: 900px;
+    background-image: url(../img/roller-brush-background.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.container-fifth h1{
+
+    padding-top:50px;
+    font-size: 70px;
+    color:rgb(248, 213, 14);
+    margin-left:13%;
+}
+
+#popular-service-para{
+
+    color:white;
+    font-size: 30px;
+    margin-left:13%;
+}
+
+.container-fifth .popular-services{
+
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container-fifth .popular-services  div{
+
+    min-height:400px;
+    min-width:25%;
+    background-color:rgb(28, 27, 27);
+    margin-left:30px;
+}
+
+.popular-services p,.popular-services h2{
+
+    margin-left: 40px;
+}
+
+
+.container-sixth{
+
+    min-height:700px;
+    display:flex;
+}
+
+.container-sixth .image-ontop{
+    min-width:50%;
+    min-height: 100%;
+    background-color:rgb(52, 50, 50);
+    position:relative;
+}
+.container-sixth .about-us{
+min-width:50%;
+min-height: 100%;
+background-color:rgb(32, 32, 32);
+
+}
+
+#yellow-onbot{
+
+    min-height:500px;
+    width:90%;
+    color:rgb(227, 198, 33);
+    background-color:rgb(227, 198, 33);
+    position:absolute;
+    top:170px;
+    left:200px;
+    z-index: 1;
+}
+
+#ontop-img{
+
+    min-height:500px;
+    width:90%;
+    position:absolute;
+    top:120px;
+    left:280px;
+    z-index: 2;
+}
+
+.about-us h1{
+
+    margin-left:250px;
+    margin-top:150px;
+    font-size:70px;
+    color:white;
+}
+
+.about-us p{
+
+    
+    margin-left:250px;
+    color:white;
+    font-size:20px;
+}
+
+.container-seventh{
+
+    min-height:700px;
+    position: relative;
+    background-color:rgb(17, 17, 17);
+}
+
+.container-seventh .call-us{
+
+    background-color:rgb(184, 160, 24);
+    color:rgb(243, 223, 223);
+    min-height: 430px;
+    width:26%;
+    position: absolute;
+    top:150px;
+    left:200px;
+    z-index: 2;
+}
+
+.call-us h3,.call-us p{
+
+    margin-left:30px;
+}
+
+
+.container-seventh .form{
+
+    width:50%;
+    min-height: 550px;
+    background-color:rgb(36, 35, 35);
+    position: absolute;
+    top:100px;
+    left:500px;
+    z-index: 1;
+
+}
+
+
+#username,#email,#message{
+    margin-left:200px;
+    width:500px;
+    height:50px;
+    font-size: 20px;
+    padding-left:10px;
+    background-color:inherit;
+    border-left: none;
+    border-right: none;
+    font-family: inherit;
+}
+textarea {
+     resize: vertical;
+     padding-top:10px;
+ }
+
+
+ footer {
+    background: #1A1E25;
+    color: #868c96;
+    margin-top: -10px;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+
+

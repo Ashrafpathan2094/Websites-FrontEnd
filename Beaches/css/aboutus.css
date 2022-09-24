@@ -1,0 +1,89 @@
+hr {
+    border: 2px solid black;
+    background-color: black;
+    width: 300px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background-color: rgb(250, 243, 243);
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2012/04/26/12/45/beach-42375_960_720.png");
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+.container {
+
+    padding-top: 30px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+
+
+
+.main {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+.red {
+    color: rgb(241, 33, 33);
+}
+
+
+.main-second,
+.main-third {
+
+    display: flex;
+}
+
+.quote {
+    width: 1200px;
+    padding: 0px 5px;
+}
+
+
+.quote-content,
+.quote-content-third {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+.formed h2,
+.erosion h2 {
+    color: rgb(241, 33, 33);
+}
+
+.formed {
+
+    padding-left: 20px;
+    text-align: left;
+}
+
+.quote-third {
+
+
+    width: 1200px;
+    margin-top: 50px;
+
+    padding-left: 30px;
+}
