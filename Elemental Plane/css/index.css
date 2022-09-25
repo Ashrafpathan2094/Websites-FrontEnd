@@ -60,4 +60,18 @@ hr {
 #last{
   border:8px solid rgb(255, 69, 0);
   padding-top:20%;
+  position:relative;
+}
+
+#last-left {
+  position: absolute;
+  top: -150px;
+  left: 100px;
+  background-color: whitesmoke;
+}
+
+#last-right {
+  position: absolute;
+  top: -150px;
+  left: 500px;
 }
