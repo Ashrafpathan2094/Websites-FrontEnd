@@ -1,0 +1,27 @@
+body {
+
+    font-family: 'Raleway', sans-serif !important;
+    font-size:1.04vw;
+}
+
+nav {
+    background-color: rgb(255, 69, 0);
+}
+
+#first {
+    height:700px;
+    background-image: url(../img/bg-image.jpg);
+    background-size: 100% 100%;
+    width: auto;
+    padding-top: 100px;
+}
+
+#first-first{
+
+    height:500px;
+    width:40%;
+    background-color: white;
+    margin-right:100px;
+    border-left: 10px solid rgb(255, 69, 0);
+    
+}
