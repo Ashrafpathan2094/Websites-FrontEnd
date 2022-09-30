@@ -3,7 +3,6 @@
     <head>
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
         <link rel="stylesheet" href="../css/index.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta
@@ -81,14 +80,154 @@
                         <a class="nav-link " href="#">Contact us</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search"
-                        placeholder="Search" aria-label="Search">
-                    <button class="btn bg-secondary my-2 my-sm-0"
-                        type="submit">Search</button>
-                </form>
+
+                <div class="my-2 my-lg-0">
+
+                    <button type="button" class="btn bg-primary
+                    text-light"
+                    data-toggle="modal"
+                    data-target="#login">
+                    Login
+                </button>
+                <button type="button" class="btn bg-primary
+                    text-light"
+                    data-toggle="modal"
+                    data-target="#signup">
+                    Sign Up
+                </button>
+
+
+                    <button type="button" class="btn bg-primary
+                        text-light">
+                        LogOut
+                    </button>
+                </div>
+
             </div>
         </nav>
+
+
+
+        <div class="modal fade" id="login" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">LogIn</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+
+                            <div class="mb-3">
+                                Email:<input type="email" class="form-control"
+                                    placeholder="Email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                Password:<input type="password"
+                                    class="form-control" placeholder="Password"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox">
+                                    Remember Me
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary">Sign
+                                In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="signup" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLongTitle">LogIn</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal Login Form</h5>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="Username">Username<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" name="username"
+                                        class="form-control" id="Username"
+                                        placeholder="Enter Username">
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="Password">Password<span
+                                            class="text-danger">*</span></label>
+                                    <input type="password" name="password"
+                                        class="form-control" id="password"
+                                        placeholder="Enter Password">
+                                </div>
+
+
+
+                                <div class="mb-3">
+                                    <input class="form-check-input"
+                                        type="checkbox" value="" id="remember"
+                                        required>
+                                    <label class="form-check-label"
+                                        for="remember">Remember Me</label>
+                                    <a href="#" class="float-end">Forgot
+                                        Password</a>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-footer pt-4">
+                                <button type="button" class="btn btn-success
+                                    mx-auto w-100">Login</button>
+                            </div>
+
+                            <p class="text-center">Not yet account, <a href="#">Signup</a></p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="carouselExampleIndicators" class="carousel slide"
             data-ride="carousel">
@@ -168,20 +307,21 @@
 
 
 
-        </div>
-        <div>
-            <a class="carousel-control-prev "
-                href="#carouselExampleIndicators"
-                role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next"
-                href="#carouselExampleIndicators"
-                role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+            <div>
+                <a class="carousel-control-prev "
+                    href="#carouselExampleIndicators"
+                    role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
         <br>
         <hr>
@@ -213,7 +353,8 @@
                 <div class="container border-top-0 d-flex align-items-center
                     text-center" style="height:200px; width:15%;">
                     <h4 class="d-inline-block">Inverter inspection</h4>
-                    <img src="../img/inverter.png" class="img-fluid" alt="" height="100"
+                    <img src="../img/inverter.png" class="img-fluid" alt=""
+                        height="100"
                         width="100">
 
                 </div>
@@ -221,21 +362,24 @@
                 <div class="container border-top-0 d-flex align-items-center
                     text-center" style="height:200px; width:15%;">
                     <h4>Complete Diagnostics</h4>
-                    <img src="../img/daignostics.png" class="img-fluid" alt="" height="100"
+                    <img src="../img/daignostics.png" class="img-fluid" alt=""
+                        height="100"
                         width="100">
                 </div>
 
                 <div class="container border-top-0 d-flex align-items-center
                     text-center" style="height:200px; width:15%;">
                     <h4>Expert Solar Panel Repair</h4>
-                    <img src="../img/repair.png"  class="img-fluid" alt=""  height="100"
+                    <img src="../img/repair.png" class="img-fluid" alt=""
+                        height="100"
                         width="100">
                 </div>
 
                 <div class="container border-top-0 d-flex align-items-center
                     text-center" style="height:200px; width:15%;">
                     <h4>Updates & Monitoring</h4>
-                    <img src="../img/monitor.png" class="img-fluid" alt="" height="100"
+                    <img src="../img/monitor.png" class="img-fluid" alt=""
+                        height="100"
                         width="100">
                 </div>
             </div>
@@ -275,7 +419,7 @@
                 </div>
                 <div class="container-fluid " style="height:600px;
                     width:40%;" id="last-right">
-                    <img src="../img/worker.jpg"  class="" alt="workerimg"
+                    <img src="../img/worker.jpg" class="" alt="workerimg"
                         height="100%"
                         width="100%">
                 </div>
