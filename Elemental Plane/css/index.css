@@ -40,17 +40,12 @@ hr {
   background-color: rgb(249, 246, 244);
 }
 
-#container-2nd div {
-
+#container-2nd div div div{
   border: 5px solid rgb(255, 69, 0);
-
   position: relative;
 }
 
 #container-2nd div img {
-
-
-
   position: absolute;
   left: 60px;
   top: -60px;
