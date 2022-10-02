@@ -36,11 +36,11 @@ hr {
   top: 300px;
 }
 
-#container-2nd{
+#container-2nd {
   background-color: rgb(249, 246, 244);
 }
 
-#container-2nd div div div{
+#container-2nd div div div {
   border: 5px solid rgb(255, 69, 0);
   position: relative;
 }
@@ -52,10 +52,10 @@ hr {
 }
 
 
-#last{
-  border:8px solid rgb(255, 69, 0);
-  padding-top:20%;
-  position:relative;
+#last {
+  border: 8px solid rgb(255, 69, 0);
+  padding-top: 20%;
+  position: relative;
 }
 
 #last-left {
@@ -69,4 +69,39 @@ hr {
   position: absolute;
   top: -150px;
   left: 500px;
+}
+
+
+.contact-form {
+  background-color: #fbfbfb;
+  padding: 15px 20px 15px;
+  border: 1px solid #ececec;
+  width: 450px;
+  margin: 50px auto;
+}
+
+.contact-form .form-header {
+  margin-bottom: 40px;
+}
+
+.contact-form form textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 120px;
+}
+
+.contact-form form .btn {
+  width: 100%;
+}
+
+.contact-form .form-header h2 {
+  font-weight: bold;
+  color: #03A9F4;
+}
+
+/*-- CSS for extra small devices--*/
+@media (max-width: 767px) {
+  .contact-form {
+    width: 90%;
+  }
 }
