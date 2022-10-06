@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/index.css">
@@ -33,6 +38,15 @@
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
             integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
             crossorigin="anonymous">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
         <title>Elemental Plane</title>
     </head>
     <body>
@@ -81,7 +95,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#"
-                            id="navbarDropdown" role="button"
+                            id="accountDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             Account
@@ -90,10 +104,8 @@
                             aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="javascript:void(0)"
                                 data-toggle="modal" data-target="#login">Login</a>
-
                             <a class="dropdown-item" href="javascript:void(0)"
                                 data-toggle="modal" data-target="#signup">Signup</a>
-
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
@@ -238,6 +250,8 @@
                 </div>
             </div>
         </div>
+
+
 
 
 
@@ -413,6 +427,98 @@
 
 
         <div class="container-fluid mt-5" id="container-2nd">
+
+
+            <div id="position" class="container-fluid border border-5"
+                style="height:1000px;
+                background-color: whitesmoke;">
+
+                <div class="container" id="solar-energy"
+                    style="width:40%;height:800px;
+                    background-color:white;">
+                    <center><h1 class="pt-5">Solar Energy</h1></center>
+                    <br><br>
+                    <p style="font-size:25px;">
+                        <i>SOLAR POWER IS POLLUTION-FREE AND CAUSES NO
+                            GREENHOUSE
+                            GASES</i>
+                    </p>
+                    <br><br>
+                    <p>
+                        The source of solar energy—the sun—is nearly limitless
+                        and can be accessed anywhere on earth at one time or
+                        another. It would take around 10 million acres of
+                        land—or only 0.4% of the area of the United States—to
+                        allow enough space for solar photovoltaics (PV) to
+                        supply all of our nation’s electricity.
+                    </p>
+
+                    <p>
+                        In today’s economy, you must have a plan. With
+                        ElementalPlane
+                        Solar you have someone on your side. Our expertise as a
+                        solar energy provider will arm you with all the
+                        information you need about going solar. The risk is low,
+                        and the reward is high. We’re ready to roll up our
+                        sleeves and help you prosper without lifting a finger.
+                    </p>
+                    <br>
+                    <center>
+                        <button type="button" class="btn btn-danger"
+                            style="width:200px; height:50px;
+                            font-size:20px" data-bs-toggle="modal"
+                            data-bs-target="#plan-modal">
+                            View Plans
+                        </button>
+                    </center>
+
+                    <div class="modal fade" id="staticBackdrop"
+                        data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn
+                                        btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn
+                                        btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container" id="bg1">
+                    <img src="img/bg1.jpg" class="image-fluid" width="60%"
+                        alt="">
+                </div>
+
+
+                <div class="container" id="bg2">
+                    <img src="img/bg2.jpg" class="image-fluid" width="50%"
+                        height="600" alt="">
+                </div>
+
+
+
+
+            </div>
+
+
+
+
             <center class="p-5">
                 <h1>How does the Solar Panel Works?</h1>
                 <p style="font-size:22px;">The amount of sunlight that
@@ -458,7 +564,8 @@
 
                     <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
                         border-top-0 mt-5 d-flex
-                        align-items-center justify-content-center text-center"
+                        align-items-center justify-content-center
+                        text-center"
                         style="height:200px; width:15%;">
                         <h4>Expert Solar Panel Repair</h4>
                         <img src="img/repair.png" class="img-fluid" alt=""
