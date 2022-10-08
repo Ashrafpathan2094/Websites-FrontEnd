@@ -38,15 +38,7 @@
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
             integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
             crossorigin="anonymous">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"></script>
+
         <title>Elemental Plane</title>
     </head>
     <body>
@@ -435,68 +427,49 @@
 
                 <div class="container" id="solar-energy"
                     style="width:40%;height:800px;
-                    background-color:white;">
-                    <center><h1 class="pt-5">Solar Energy</h1></center>
-                    <br><br>
-                    <p style="font-size:25px;">
-                        <i>SOLAR POWER IS POLLUTION-FREE AND CAUSES NO
-                            GREENHOUSE
-                            GASES</i>
-                    </p>
-                    <br><br>
-                    <p>
-                        The source of solar energy—the sun—is nearly limitless
-                        and can be accessed anywhere on earth at one time or
-                        another. It would take around 10 million acres of
-                        land—or only 0.4% of the area of the United States—to
-                        allow enough space for solar photovoltaics (PV) to
-                        supply all of our nation’s electricity.
-                    </p>
+                    background-color:rgb(194, 189, 189);">
+                    <center><h1 class="pt-5" style="color:rgb(255, 69, 0);">Solar
+                            Energy</h1>
+                        <br><br>
+                        <p style="font-size:25px; font-weight:bold; ">
+                            <i>SOLAR POWER IS POLLUTION-FREE AND CAUSES NO
+                                GREENHOUSE
+                                GASES</i>
+                        </p>
+                        <br><br>
+                        <p>
+                            The source of solar energy—the sun—is nearly
+                            limitless
+                            and can be accessed anywhere on earth at one time or
+                            another. It would take around 10 million acres of
+                            land—or only 0.4% of the area of the United
+                            States—to
+                            allow enough space for solar photovoltaics (PV) to
+                            supply all of our nation’s electricity.
+                        </p>
 
-                    <p>
-                        In today’s economy, you must have a plan. With
-                        ElementalPlane
-                        Solar you have someone on your side. Our expertise as a
-                        solar energy provider will arm you with all the
-                        information you need about going solar. The risk is low,
-                        and the reward is high. We’re ready to roll up our
-                        sleeves and help you prosper without lifting a finger.
-                    </p>
-                    <br>
-                    <center>
+                        <p>
+                            In today’s economy, you must have a plan. With
+                            ElementalPlane
+                            Solar you have someone on your side. Our expertise
+                            as a
+                            solar energy provider will arm you with all the
+                            information you need about going solar. The risk is
+                            low,
+                            and the reward is high. We’re ready to roll up our
+                            sleeves and help you prosper without lifting a
+                            finger.
+                        </p>
+                        <br>
+
                         <button type="button" class="btn btn-danger"
                             style="width:200px; height:50px;
-                            font-size:20px" data-bs-toggle="modal"
-                            data-bs-target="#plan-modal">
+                            font-size:20px" data-toggle="modal"
+                            data-target="#plans">
                             View Plans
                         </button>
                     </center>
 
-                    <div class="modal fade" id="staticBackdrop"
-                        data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title"
-                                        id="staticBackdropLabel">Modal title</h5>
-                                    <button type="button" class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn
-                                        btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn
-                                        btn-primary">Understood</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -510,14 +483,7 @@
                     <img src="img/bg2.jpg" class="image-fluid" width="50%"
                         height="600" alt="">
                 </div>
-
-
-
-
             </div>
-
-
-
 
             <center class="p-5">
                 <h1>How does the Solar Panel Works?</h1>
@@ -538,7 +504,7 @@
             </center>
             <div class="container-fluid
                 mt-5 p-5">
-                <div class="row justify-content-around">
+                <div class="row justify-content-around" id="row-div">
 
                     <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
                         border-top-0 mt-5 d-flex
@@ -586,8 +552,79 @@
             </div>
         </div>
 
+        <!-- 
+            view plans modal -->
+        <div class="modal fade" id="plans" tabindex="-1"
+            role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">LogIn</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
 
-        <!-- <div class="container-fluid mt-5" id="container-2nd">
+                    <div class="modal-body">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://picsum.photos/id/11/200/200" alt="Card
+                                    image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card
+                                        with supporting text below as a natural
+                                        lead-in to additional content. This
+                                        content is a little bit longer.</p>
+                                    <p class="card-text"><small
+                                            class="text-muted">Last updated 3
+                                            mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://picsum.photos/id/14/200/200" alt="Card
+                                    image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has
+                                        supporting text below as a natural
+                                        lead-in to additional content.</p>
+                                    <p class="card-text"><small
+                                            class="text-muted">Last updated 3
+                                            mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://picsum.photos/id/17/200/200" alt="Card
+                                    image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card
+                                        with supporting text below as a natural
+                                        lead-in to additional content. This card
+                                        has even longer content than the first
+                                        to show that equal height action.</p>
+                                    <p class="card-text"><small
+                                            class="text-muted">Last updated 3
+                                            mins ago</small></p>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save
+                                changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="container-fluid mt-5" id="container-2nd">
             <center class="p-5">
                 <h1>How does the Solar Panel Works?</h1>
                 <p style="font-size:22px;">The amount of sunlight that
@@ -644,143 +681,144 @@
                 </div>
             </div>
         </div> -->
-        <div class="container-fluid" style="height:700px;padding-top:200px;
-            background-color:rgb(204, 196, 196);">
+            <div class="container-fluid" style="height:700px;padding-top:200px;
+                background-color:rgb(204, 196, 196);">
 
-            <div class="container" style="width:60%;"
-                id="last">
-                <div class="container-fluid border" style="height:600px;
-                    width:40%;" id="last-left">
-                    <center>
-                        <h2 class="mt-5">Elemental Plane</h2>
-                        <br>
-                        <p>
-                            How solar panels work in adverse weather is
-                            perhaps
-                            the most common question about solar energy, and
-                            the
-                            simple answer is: if you can see outside with
-                            your
-                            eyes, then your solar panels are working. How
-                            much
-                            light there is, of course, affects how much
-                            electricity they are able to produce. And poor
-                            weather will reduce their efficiency. But solar
-                            panels work in all weather.
-                        </p>
-                        <br><br>
-                        <button type="button" class="btn btn-danger"
-                            style="width:200px; height:50px;
-                            font-size:20px">
-                            <i class="bi bi-telephone-outbound"></i> Call Us
-                        </button>
-                    </center>
-                </div>
-                <div class="container-fluid " style="height:600px;
-                    width:40%;" id="last-right">
-                    <img src="img/worker.jpg" class="" alt="workerimg"
-                        height="100%"
-                        width="100%">
+                <div class="container" style="width:60%;"
+                    id="last">
+                    <div class="container-fluid border" style="height:600px;
+                        width:40%;" id="last-left">
+                        <center>
+                            <h2 class="mt-5">Elemental Plane</h2>
+                            <br>
+                            <p>
+                                How solar panels work in adverse weather is
+                                perhaps
+                                the most common question about solar energy, and
+                                the
+                                simple answer is: if you can see outside with
+                                your
+                                eyes, then your solar panels are working. How
+                                much
+                                light there is, of course, affects how much
+                                electricity they are able to produce. And poor
+                                weather will reduce their efficiency. But solar
+                                panels work in all weather.
+                            </p>
+                            <br><br>
+                            <button type="button" class="btn btn-danger"
+                                style="width:200px; height:50px;
+                                font-size:20px">
+                                <i class="bi bi-telephone-outbound"></i> Call Us
+                            </button>
+                        </center>
+                    </div>
+                    <div class="container-fluid " style="height:600px;
+                        width:40%;" id="last-right">
+                        <img src="img/worker.jpg" class="" alt="workerimg"
+                            height="100%"
+                            width="100%">
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- Footer -->
-        <footer class="bg-light text-center ">
-            <!-- Grid container -->
-            <div class="container p-4">
+            <!-- Footer -->
+            <footer class="bg-light text-center ">
+                <!-- Grid container -->
+                <div class="container p-4">
 
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn btn-primary btn-floating m-1"
-                        style="background-color: #3b5998" href="#!"
-                        role="button"> <i class="bi bi-facebook"></i></a>
-                    <!-- Twitter -->
-                    <a class="btn btn-primary btn-floating m-1"
-                        style="background-color: #55acee" href="#!"
-                        role="button"><i class="bi bi-twitter"></i></a>
-                    <!-- Google -->
-                    <a class="btn btn-primary btn-floating m-1"
-                        style="background-color: #dd4b39" href="#!"
-                        role="button"><i class="bi bi-google"></i></a>
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1"
+                            style="background-color: #3b5998" href="#!"
+                            role="button"> <i class="bi bi-facebook"></i></a>
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1"
+                            style="background-color: #55acee" href="#!"
+                            role="button"><i class="bi bi-twitter"></i></a>
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1"
+                            style="background-color: #dd4b39" href="#!"
+                            role="button"><i class="bi bi-google"></i></a>
 
-                    <!-- Instagram -->
-                    <a class="btn btn-primary btn-floating m-1"
-                        style="background-color: #ac2bac" href="#!"
-                        role="button"><i class="bi bi-instagram"></i></a>
-                    <!-- Linkedin -->
-                    <a class="btn btn-primary btn-floating m-1"
-                        style="background-color: #0082ca" href="#!"
-                        role="button"><i class="bi bi-linkedin"></i></a>
-                    <!-- Github -->
-                    <a class="btn btn-primary btn-floating m-1"
-                        style="background-color: #333333" href="#!"
-                        role="button"><i class="bi bi-github"></i></a>
-                </section>
-                <!-- Section: Social media -->
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1"
+                            style="background-color: #ac2bac" href="#!"
+                            role="button"><i class="bi bi-instagram"></i></a>
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1"
+                            style="background-color: #0082ca" href="#!"
+                            role="button"><i class="bi bi-linkedin"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1"
+                            style="background-color: #333333" href="#!"
+                            role="button"><i class="bi bi-github"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
 
 
-                <!-- Section: Form -->
-                <section class="">
-                    <form action="">
-                        <!--Grid row-->
-                        <div class="row d-flex justify-content-center">
-                            <!--Grid column-->
-                            <div class="col-auto">
-                                <p class="pt-2">
-                                    <strong>Sign up for our Solar Services
-                                        Updates</strong>
-                                </p>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-5 col-12">
-                                <!-- Email input -->
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="form5Example2"
-                                        class="form-control" />
-                                    <label class="form-label"
-                                        for="form5Example2">Email address</label>
+                    <!-- Section: Form -->
+                    <section class="">
+                        <form action="">
+                            <!--Grid row-->
+                            <div class="row d-flex justify-content-center">
+                                <!--Grid column-->
+                                <div class="col-auto">
+                                    <p class="pt-2">
+                                        <strong>Sign up for our Solar Services
+                                            Updates</strong>
+                                    </p>
                                 </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-5 col-12">
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="form5Example2"
+                                            class="form-control" />
+                                        <label class="form-label"
+                                            for="form5Example2">Email address</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-auto">
+
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary
+                                        mb-4">
+                                        Subscribe
+                                    </button>
+                                </div>
+                                <!--Grid column-->
                             </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-auto">
-
-                                <!-- Submit button -->
-                                <button type="submit" class="btn btn-primary
-                                    mb-4">
-                                    Subscribe
-                                </button>
-                            </div>
-                            <!--Grid column-->
-                        </div>
-                        <!--Grid row-->
-                    </form>
-                </section>
-                <!-- Section: Form -->
+                            <!--Grid row-->
+                        </form>
+                    </section>
+                    <!-- Section: Form -->
 
 
 
-                <!-- Section: Links -->
+                    <!-- Section: Links -->
 
-            </div>
-            <!-- Grid container -->
+                </div>
+                <!-- Grid container -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0,
-                0,
-                0.2)">
-                © 2022 Copyright:
-                <a class="text-dark" href="https://mdbootstrap.com/">ElementalPlane.com</a>
-            </div>
-            <!-- Copyright -->
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0,
+                    0,
+                    0.2)">
+                    © 2022 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">ElementalPlane.com</a>
+                </div>
+                <!-- Copyright -->
 
-        </footer>
-        <!-- Footer -->
-    </body>
-</html>
+            </footer>
+            <!-- Footer -->
+
+        </body>
+    </html>

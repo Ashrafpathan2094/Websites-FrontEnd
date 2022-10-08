@@ -40,7 +40,7 @@ hr {
   background-color: rgb(249, 246, 244);
 }
 
-#container-2nd div div div {
+#row-div div {
   border: 5px solid rgb(255, 69, 0);
   position: relative;
 }
