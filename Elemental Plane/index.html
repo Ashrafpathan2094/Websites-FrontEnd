@@ -39,15 +39,18 @@
             integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
             crossorigin="anonymous">
 
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
         <title>Elemental Plane</title>
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.jpg" width="50"
                     height="40" class="d-inline-block align-top" alt="">
-                ElementalPlane
+
             </a>
             <button class="navbar-toggler" type="button"
                 data-toggle="collapse"
@@ -110,7 +113,12 @@
                     </li>
                 </ul>
 
-
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn my-2 my-sm-0"
+                        type="submit">Search</button>
+                </form>
 
 
 
@@ -118,8 +126,8 @@
 
 
         </nav>
-
-
+        <!-- 
+        login modal -->
 
         <div class="modal fade" id="login" tabindex="-1"
             role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -428,9 +436,14 @@
                 <div class="container" id="solar-energy"
                     style="width:40%;height:800px;
                     background-color:rgb(194, 189, 189);">
-                    <center><h1 class="pt-5" style="color:rgb(255, 69, 0);">Solar
-                            Energy</h1>
-                        <br><br>
+
+                    <span>
+                        <center><h1 class="mt-3 " style="color:white;">Solar
+                                Energy</h1></center>
+                    </span>
+
+                    <br><br>
+                    <center>
                         <p style="font-size:25px; font-weight:bold; ">
                             <i>SOLAR POWER IS POLLUTION-FREE AND CAUSES NO
                                 GREENHOUSE
@@ -462,9 +475,10 @@
                         </p>
                         <br>
 
-                        <button type="button" class="btn btn-danger"
+                        <button type="button" class="btn"
                             style="width:200px; height:50px;
-                            font-size:20px" data-toggle="modal"
+                            font-size:20px; background-color:#834bd1;
+                            color:white;" data-toggle="modal"
                             data-target="#plans">
                             View Plans
                         </button>
@@ -507,46 +521,64 @@
                 <div class="row justify-content-around" id="row-div">
 
                     <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
-                        border-top-0 mt-5 d-flex
-                        align-items-center justify-center text-center"
-                        style="height:200px; width:15%;">
-                        <h4 class="d-inline-block">Inverter inspection</h4>
-                        <img src="img/inverter.png" class="img-fluid" alt=""
-                            height="100"
-                            width="100">
+                        border-top-0 mt-5"
+                        style="height:200px; width:15%;"><div class="d-flex
+                            flex-column
+                            align-items-center border-0">
+
+                            <img src="img/inverter.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Inverter Inspection</h4></center>
+                        </div>
 
                     </div>
 
                     <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
                         border-top-0
-                        mt-5 d-flex align-items-center justify-center
-                        text-center" style="height:200px; width:15%;">
-                        <h4>Complete Diagnostics</h4>
-                        <img src="img/daignostics.png" class="img-fluid"
-                            alt=""
-                            height="100"
-                            width="100">
+                        mt-5" style="height:200px; width:15%;">
+                        <div class="d-flex flex-column
+                            align-items-center border-0">
+
+                            <img src="img/daignostics.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Complete Diagnostics</h4></center>
+                        </div>
                     </div>
 
                     <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
-                        border-top-0 mt-5 d-flex
-                        align-items-center justify-content-center
-                        text-center"
+                        border-top-0 mt-5"
                         style="height:200px; width:15%;">
-                        <h4>Expert Solar Panel Repair</h4>
-                        <img src="img/repair.png" class="img-fluid" alt=""
-                            height="100"
-                            width="100">
+                        <div class="d-flex flex-column
+                            align-items-center border-0">
+
+                            <img src="img/repair.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Solar Panel Repair</h4></center>
+                        </div>
                     </div>
 
                     <div class="col-12 col-xl-2 col-lg-3 col-md-5 col-sm-12
-                        border-top-0 mt-5 d-flex
-                        align-items-center justify-center text-center"
-                        style="height:200px; width:15%;">
-                        <h4>Updates & Monitoring</h4>
-                        <img src="img/monitor.png" class="img-fluid" alt=""
-                            height="100"
-                            width="100">
+                        border-top-0 mt-5"
+                        style="height:200px; width:15%;"><div class="d-flex
+                            flex-column
+                            align-items-center border-0">
+
+                            <img src="img/monitor.png" class="img-fluid"
+                                alt=""
+                                height="100"
+                                width="100">
+                            <br>
+                            <center><h4>Updates and Monitoring</h4></center>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -568,63 +600,89 @@
                     </div>
 
                     <div class="modal-body">
-                        <div class="card-deck">
-                            <div class="card">
-                                <img class="card-img-top" src="https://picsum.photos/id/11/200/200" alt="Card
-                                    image cap">
+                        <div class="container">
+                            <div class="card mx-auto">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card
-                                        with supporting text below as a natural
-                                        lead-in to additional content. This
-                                        content is a little bit longer.</p>
-                                    <p class="card-text"><small
-                                            class="text-muted">Last updated 3
-                                            mins ago</small></p>
+                                    <div class="logo mb-3"><img
+                                            src="https://img.icons8.com/nolan/64/rounded-square.png"/></div>
+                                    <h3 class="card-title">Metrics</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Everything
+                                        you need to understand your bussiness</h6>
+                                    <div class="row rone mt-4">
+                                        <div class="col-md-6">
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Control
+                                                Center</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Metrics</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Forecast</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Benchmarks</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Customers</p>
+                                            <p class="text-muted"><i class="far
+                                                    fa-check-circle"></i>Reports
+                                                and notifications</p>
+                                        </div>
+                                    </div>
+                                    <div class="container kl">
+                                        <div class="row rtwo my-3">
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio">
+                                                    <label
+                                                        class="form-check-label">Bill
+                                                        monthly</label>
+                                                    <span class="rate">&#36;390/<span
+                                                            class="text-muted">month</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container kl my-3">
+                                        <div class="row rthree my-3">
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio">
+                                                    <label
+                                                        class="form-check-label">Bill
+                                                        yearly &nbsp;&nbsp;<span
+                                                            class="note">SAVE
+                                                            TWO MONTHS</span></label>
+                                                    <span class="nrate">&#36;3,900/<span
+                                                            class="text-muted">year</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary
+                                        btn-lg btn-block mt-3"><span>Subscribe
+                                            now</span></button>
+
                                 </div>
                             </div>
-                            <div class="card">
-                                <img class="card-img-top" src="https://picsum.photos/id/14/200/200" alt="Card
-                                    image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This card has
-                                        supporting text below as a natural
-                                        lead-in to additional content.</p>
-                                    <p class="card-text"><small
-                                            class="text-muted">Last updated 3
-                                            mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="https://picsum.photos/id/17/200/200" alt="Card
-                                    image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card
-                                        with supporting text below as a natural
-                                        lead-in to additional content. This card
-                                        has even longer content than the first
-                                        to show that equal height action.</p>
-                                    <p class="card-text"><small
-                                            class="text-muted">Last updated 3
-                                            mins ago</small></p>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save
-                                changes</button>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
                     </div>
                 </div>
             </div>
+        </div>
 
 
-            <!-- <div class="container-fluid mt-5" id="container-2nd">
+        <!-- <div class="container-fluid mt-5" id="container-2nd">
             <center class="p-5">
                 <h1>How does the Solar Panel Works?</h1>
                 <p style="font-size:22px;">The amount of sunlight that
@@ -681,144 +739,145 @@
                 </div>
             </div>
         </div> -->
-            <div class="container-fluid" style="height:700px;padding-top:200px;
-                background-color:rgb(204, 196, 196);">
+        <div class="container-fluid" style="height:700px;padding-top:200px;
+            background-color:rgb(204, 196, 196);">
 
-                <div class="container" style="width:60%;"
-                    id="last">
-                    <div class="container-fluid border" style="height:600px;
-                        width:40%;" id="last-left">
-                        <center>
-                            <h2 class="mt-5">Elemental Plane</h2>
-                            <br>
-                            <p>
-                                How solar panels work in adverse weather is
-                                perhaps
-                                the most common question about solar energy, and
-                                the
-                                simple answer is: if you can see outside with
-                                your
-                                eyes, then your solar panels are working. How
-                                much
-                                light there is, of course, affects how much
-                                electricity they are able to produce. And poor
-                                weather will reduce their efficiency. But solar
-                                panels work in all weather.
-                            </p>
-                            <br><br>
-                            <button type="button" class="btn btn-danger"
-                                style="width:200px; height:50px;
-                                font-size:20px">
-                                <i class="bi bi-telephone-outbound"></i> Call Us
-                            </button>
-                        </center>
-                    </div>
-                    <div class="container-fluid " style="height:600px;
-                        width:40%;" id="last-right">
-                        <img src="img/worker.jpg" class="" alt="workerimg"
-                            height="100%"
-                            width="100%">
-                    </div>
+            <div class="container" style="width:60%;"
+                id="last">
+                <div class="container-fluid border" style="height:600px;
+                    width:40%;" id="last-left">
+                    <center>
+                        <h2 class="mt-5">Elemental Plane</h2>
+                        <br>
+                        <p>
+                            How solar panels work in adverse weather is
+                            perhaps
+                            the most common question about solar energy, and
+                            the
+                            simple answer is: if you can see outside with
+                            your
+                            eyes, then your solar panels are working. How
+                            much
+                            light there is, of course, affects how much
+                            electricity they are able to produce. And poor
+                            weather will reduce their efficiency. But solar
+                            panels work in all weather.
+                        </p>
+                        <br><br>
+                        <button type="button" class="btn"
+                            style="width:200px; height:50px;
+                            font-size:20px;background-color:#834bd1;color:white;">
+                            <i class="bi bi-telephone-outbound"></i> Call Us
+                        </button>
+                    </center>
+                </div>
+                <div class="container-fluid " style="height:600px;
+                    width:40%;" id="last-right">
+                    <img src="img/worker.jpg" class="" alt="workerimg"
+                        height="100%"
+                        width="100%">
                 </div>
             </div>
+        </div>
 
 
-            <!-- Footer -->
-            <footer class="bg-light text-center ">
-                <!-- Grid container -->
-                <div class="container p-4">
+        <!-- Footer -->
+        <footer class="bg-light text-center ">
+            <!-- Grid container -->
+            <div class="container p-4">
 
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
-                        <!-- Facebook -->
-                        <a class="btn btn-primary btn-floating m-1"
-                            style="background-color: #3b5998" href="#!"
-                            role="button"> <i class="bi bi-facebook"></i></a>
-                        <!-- Twitter -->
-                        <a class="btn btn-primary btn-floating m-1"
-                            style="background-color: #55acee" href="#!"
-                            role="button"><i class="bi bi-twitter"></i></a>
-                        <!-- Google -->
-                        <a class="btn btn-primary btn-floating m-1"
-                            style="background-color: #dd4b39" href="#!"
-                            role="button"><i class="bi bi-google"></i></a>
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998" href="#!"
+                        role="button"> <i class="bi bi-facebook"></i></a>
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee" href="#!"
+                        role="button"><i class="bi bi-twitter"></i></a>
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39" href="#!"
+                        role="button"><i class="bi bi-google"></i></a>
 
-                        <!-- Instagram -->
-                        <a class="btn btn-primary btn-floating m-1"
-                            style="background-color: #ac2bac" href="#!"
-                            role="button"><i class="bi bi-instagram"></i></a>
-                        <!-- Linkedin -->
-                        <a class="btn btn-primary btn-floating m-1"
-                            style="background-color: #0082ca" href="#!"
-                            role="button"><i class="bi bi-linkedin"></i></a>
-                        <!-- Github -->
-                        <a class="btn btn-primary btn-floating m-1"
-                            style="background-color: #333333" href="#!"
-                            role="button"><i class="bi bi-github"></i></a>
-                    </section>
-                    <!-- Section: Social media -->
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac" href="#!"
+                        role="button"><i class="bi bi-instagram"></i></a>
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca" href="#!"
+                        role="button"><i class="bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-primary btn-floating m-1"
+                        style="background-color: #333333" href="#!"
+                        role="button"><i class="bi bi-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
 
 
-                    <!-- Section: Form -->
-                    <section class="">
-                        <form action="">
-                            <!--Grid row-->
-                            <div class="row d-flex justify-content-center">
-                                <!--Grid column-->
-                                <div class="col-auto">
-                                    <p class="pt-2">
-                                        <strong>Sign up for our Solar Services
-                                            Updates</strong>
-                                    </p>
-                                </div>
-                                <!--Grid column-->
-
-                                <!--Grid column-->
-                                <div class="col-md-5 col-12">
-                                    <!-- Email input -->
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="form5Example2"
-                                            class="form-control" />
-                                        <label class="form-label"
-                                            for="form5Example2">Email address</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
-
-                                <!--Grid column-->
-                                <div class="col-auto">
-
-                                    <!-- Submit button -->
-                                    <button type="submit" class="btn btn-primary
-                                        mb-4">
-                                        Subscribe
-                                    </button>
-                                </div>
-                                <!--Grid column-->
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Sign up for our Solar Services
+                                        Updates</strong>
+                                </p>
                             </div>
-                            <!--Grid row-->
-                        </form>
-                    </section>
-                    <!-- Section: Form -->
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form5Example2"
+                                        class="form-control" />
+                                    <label class="form-label"
+                                        for="form5Example2">Email address</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-auto">
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn
+                                    mb-4"
+                                    style="background-color:#834bd1;color:white;">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
 
 
 
-                    <!-- Section: Links -->
+                <!-- Section: Links -->
 
-                </div>
-                <!-- Grid container -->
+            </div>
+            <!-- Grid container -->
 
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0,
-                    0,
-                    0.2)">
-                    © 2022 Copyright:
-                    <a class="text-dark" href="https://mdbootstrap.com/">ElementalPlane.com</a>
-                </div>
-                <!-- Copyright -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0,
+                0,
+                0.2)">
+                © 2022 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">ElementalPlane.com</a>
+            </div>
+            <!-- Copyright -->
 
-            </footer>
-            <!-- Footer -->
+        </footer>
+        <!-- Footer -->
 
-        </body>
-    </html>
+    </body>
+</html>

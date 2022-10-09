@@ -4,17 +4,23 @@ body {
 }
 
 nav {
-  background-color: rgb(255, 69, 0);
+  background-color: #834bd1;
 
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 hr {
   border: none;
-  height: 20px;
+  height: 50px;
   /* Set the hr color */
-  color: rgb(255, 69, 0);
+  color: #834bd1;
   /* old IE */
-  background-color: rgb(255, 69, 0);
+  background-color: #834bd1;
   /* Modern Browsers */
 }
 
@@ -41,19 +47,17 @@ hr {
 }
 
 #row-div div {
-  border: 5px solid rgb(255, 69, 0);
-  position: relative;
+  border: 5px solid #834bd1;
 }
 
 #container-2nd div img {
-  position: absolute;
   left: 60px;
   top: -60px;
 }
 
 
 #last {
-  border: 8px solid rgb(255, 69, 0);
+  border: 8px solid #834bd1;
   padding-top: 20%;
   position: relative;
 }
@@ -109,26 +113,106 @@ hr {
 
 
 
-#position{
+.card {
+  max-width: 700px;
+  padding: 6vh;
+  padding-top: 7px !important;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: block;
+  box-shadow: 0 0 15px #dae0e5;
+}
+
+i.far {
+  margin-right: 13px;
+  color: #bb04e9;
+}
+
+.container.kl {
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+
+.kl:hover {
+  border: 2px solid #834bd1;
+  cursor: pointer;
+}
+
+label.form-check-label {
+  font-size: 16px;
+}
+
+.note {
+  border-radius: 15px;
+  border: none;
+  border-color: grey;
+  background: #e9ecef;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #bb04e9;
+}
+
+span.text-muted {
+  font-size: 12px;
+}
+
+span.rate {
+  margin-left: 200px;
+}
+
+span.nrate {
+  margin-left: 90px;
+}
+
+.btn.btn-lg {
+  background: #834bd1;
+}
+
+.btn.btn-lg span {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media(max-width:768px) {
+  .card {
+    padding: 2vh;
+    width: 100%;
+  }
+
+  span.rate {
+    margin-left: 150px;
+  }
+
+  span.nrate {
+    margin-left: 40px;
+  }
+}
+
+#position {
   position: relative;
 }
 
 
-#solar-energy{
+#solar-energy {
   position: absolute;
-  top:100px;
-  left:50px;
+  top: 100px;
+  left: 50px;
   z-index: 4;
 }
 
 
-#solar-energy h1{
-  font-size:80px;
+#solar-energy h1 {
+  font-size: 80px;
 }
 
 
 
-#bg1{
+#bg1 {
 
   position: absolute;
   z-index: 3;
@@ -136,7 +220,7 @@ hr {
   left: 500px;
 }
 
-#bg2{
+#bg2 {
 
   position: absolute;
   z-index: 2;
@@ -146,7 +230,7 @@ hr {
 
 
 
-#bg3{
+#bg3 {
 
   position: absolute;
   z-index: 3;
