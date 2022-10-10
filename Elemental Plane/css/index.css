@@ -7,23 +7,9 @@ nav {
   background-color: #834bd1;
 
 }
-
 /* 
 login */
-.intro {
-  height: 100%;
-}
 
-.gradient-custom {
-  /* fallback for old browsers */
-  background: #fa709a;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to bottom right, rgba(250, 112, 154, 1), rgba(254, 225, 64, 1));
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to bottom right, rgba(250, 112, 154, 1), rgba(254, 225, 64, 1))
-}
 
 
 hr {
@@ -213,7 +199,7 @@ span.nrate {
 #solar-energy {
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 100px;
   z-index: 4;
 }
 
@@ -228,16 +214,16 @@ span.nrate {
 
   position: absolute;
   z-index: 3;
-  top: 100px;
-  left: 500px;
+  top: 0px;
+  left: 600px;
 }
 
 #bg2 {
 
   position: absolute;
   z-index: 2;
-  top: 400px;
-  left: 600px;
+  top: 200px;
+  left: 800px;
 }
 
 
@@ -246,6 +232,6 @@ span.nrate {
 
   position: absolute;
   z-index: 3;
-  top: 900px;
-  left: 300px;
+  top: 700px;
+  left: 500px;
 }
